@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Nathaniel Rosell | Full Stack Developer</title>
+
+    <!-- Google Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Inter:wght@300..700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="bg-background text-on-surface font-body">
+
+    <!-- TopAppBar -->
+    <nav id="navbar" class="navbar navbar-expand-md fixed-top h-20-px py-3">
+        <div class="container-fluid px-md-5">
+            <a class="navbar-brand d-flex align-items-center gap-3" href="#landing">
+                <span class="material-symbols-outlined text-primary">blur_on</span>
+                <span class="text-primary fw-bold font-headline tracking-tight fs-4">Nathaniel Rosell</span>
+            </a>
+            
+            <button class="navbar-toggler border-0 text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-md-4 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom active" href="#landing">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#tools">Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="landing" class="position-relative min-vh-100 d-flex flex-column align-items-center justify-content-center pt-5 pb-5 px-3 overflow-hidden">
+            
+            <!-- Parallax Background Glows -->
+            <div id="hero-glow-1" class="bg-parallax-glow glow-1 animate-float"></div>
+            <div id="hero-glow-2" class="bg-parallax-glow glow-2 animate-float-delayed"></div>
+            
+            <div class="container text-center z-10 pt-5 pb-5">
+                <div class="position-relative d-inline-block mb-5">
+                    <div class="profile-img-wrapper rounded-circle p-1 primary-gradient mx-auto">
+                        <img alt="Nathaniel Rosell" class="w-100 h-100 object-fit-cover rounded-circle bg-surface-container-high" src="./img/2x2.png"/>
+                    </div>
+                </div>
+                <h1 class="font-headline display-3 fw-extrabold tracking-tight mb-4 lh-1">
+                    Nathaniel Rosell
+                </h1>
+                <h2 class="font-headline fw-extrabold tracking-tight mb-4 lh-1">
+                    Full Stack <span class="primary-gradient-text">Web Developer</span>
+                </h2>
+                <p class="text-on-surface-variant fs-5 mx-auto mb-5 fw-light lh-lg" >
+                    Digital Curator & Fullstack Architect specialized in building immersive, high-performance interfaces that bridge the gap between design and motion.
+                </p>
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                    <a href="./img/resume.pdf" target="_blank" class="btn btn-primary-custom px-5 py-3 rounded-pill fw-bold d-flex align-items-center justify-content-center gap-2">
+                        <span class="material-symbols-outlined">description</span> 
+                        <span>Resume</span>
+                    </a>
+                    <a href="#projects" class="btn btn-glass-custom px-5 py-3 rounded-pill fw-bold">
+                        View Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="tools" class="py-section px-3 bg-surface-container-low">
+            <div class="container-xl">
+                <div class="mb-5 text-center text-md-start">
+                    <span class="text-primary font-label small tracking-widest text-uppercase d-block mb-3">Stack & Ecosystem</span>
+                    <h2 class="font-headline display-5 fw-bold">Tools & Tech Stack</h2>
+                </div>
+                <div class="row g-4">
+                    
+                    <!-- Card: Frontend -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="liquid-glass ghost-border p-5 rounded-5 h-100 d-flex flex-column gap-4 card-hover">
+                            <div class="icon-box rounded-4 bg-primary-alpha d-flex align-items-center justify-content-center">
+                                <span class="material-symbols-outlined text-primary fs-2">code</span>
+                            </div>
+                            <h3 class="font-headline h4 fw-bold">Frontend</h3>
+                            <p class="text-on-surface-variant lh-lg">Developing high-performance, pixel-perfect user interfaces with a focus on responsiveness and accessibility.</p>
+                            <div class="mt-auto d-flex flex-wrap gap-2 pt-3">
+                                <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+                                <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Tailwind</span><span class="tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card: Backend -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="liquid-glass ghost-border p-5 rounded-5 h-100 d-flex flex-column gap-4 card-hover">
+                            <div class="icon-box rounded-4 bg-tertiary-alpha d-flex align-items-center justify-content-center">
+                                <span class="material-symbols-outlined text-tertiary fs-2">storage</span>
+                            </div>
+                            <h3 class="font-headline h4 fw-bold">Backend</h3>
+                            <p class="text-on-surface-variant lh-lg">Building scalable server-side architectures, robust API systems, and managing complex database environments.</p>
+                            <div class="mt-auto d-flex flex-wrap gap-2 pt-3">
+                                <span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">MongoDB</span>
+                                <span class="tag">Firebase</span><span class="tag">SQL</span><span class="tag">Java</span><span class="tag">C#</span><span class="tag">PHP</span><span class="tag">Laravel</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card: Other Tools -->
+                    <div class="col-lg-4 col-md-12">
+                        <div class="liquid-glass ghost-border p-5 rounded-5 h-100 d-flex flex-column gap-4 card-hover">
+                            <div class="icon-box rounded-4 bg-primary-container-alpha d-flex align-items-center justify-content-center">
+                                <span class="material-symbols-outlined text-primary-container fs-2">architecture</span>
+                            </div>
+                            <h3 class="font-headline h4 fw-bold">Other Tools</h3>
+                            <p class="text-on-surface-variant lh-lg">Utilizing industry-leading creative software and productivity tools for design, production, and collaboration.</p>
+                            <div class="mt-auto d-flex flex-wrap gap-2 pt-3">
+                                <span class="tag">Postman</span><span class="tag">VS Code</span><span class="tag">GitHub</span>
+                                <span class="tag">GitTea</span><span class="tag">Figma</span><span class="tag">Canva</span><span class="tag">Photoshop</span>
+                                <span class="tag">Premiere Pro</span><span class="tag">After Effects</span><span class="tag">Jira</span><span class="tag">Trello</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-section px-3">
+            <div class="container-xl">
+                <div class="mb-5">
+                    <span class="text-primary font-label small tracking-widest text-uppercase d-block mb-3">Curated Work</span>
+                    <h2 class="font-headline display-5 fw-bold">Selected Projects</h2>
+                </div>
+
+                <div class="row g-5">
+                    <!-- Project 1: E-commerce App -->
+                    <div class="col-md-8">
+                        <div class="project-card group cursor-pointer" 
+                            data-bs-toggle="modal" data-bs-target="#projectModal"
+                            data-title="E-commerce App" 
+                            data-image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
+                            data-desc="MERN E-Commerce Platform. The platform features dynamic product catalog with filtering and sorting, real-time search seamless cart updates, secure checkout, and a comprehensive admin dashboard with real-time analytics and user management capabilities.">
+                            <div class="position-relative overflow-hidden rounded-5 bg-surface-container-high mb-4 ratio ratio-16x10">
+                                <img alt="Project 1" class="img-fluid object-fit-cover transition-transform" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"/>
+                                <div class="project-overlay d-flex flex-column justify-content-end p-5">
+                                    <span class="text-primary small text-uppercase fw-bold">Capstone Project</span>
+                                    <h4 class="h3 fw-bold font-headline text-white">E-commerce App</h4>
+                                </div>
+                            </div>
+                            <div class="px-2">
+                                <h3 class="h3 fw-bold font-headline mb-2">E-commerce App</h3>
+                                <p class="text-on-surface-variant">Full-scale MERN platform with real-time search, secure checkout, and a comprehensive admin dashboard. <span class="text-primary small">View Details</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: E-commerce API -->
+                    <div class="col-md-4 mt-md-5 pt-md-5">
+                        <div class="project-card group cursor-pointer" 
+                            data-bs-toggle="modal" data-bs-target="#projectModal"
+                            data-title="E-commerce API Documentation" 
+                            data-image="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop"
+                            data-desc="Dynamic E-Commerce Workflow Management. The system features dynamic routes for order processing, real-time inventory updates, and secure user authentication. It also supports seamless automated order reporting and comprehensive product management. Documented Backend API published publicly using Postman.">
+                            <div class="position-relative overflow-hidden rounded-5 bg-surface-container-high mb-4 ratio ratio-10x12">
+                                <img alt="Project 2" class="img-fluid object-fit-cover transition-transform" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop"/>
+                            </div>
+                            <div class="px-2">
+                                <h3 class="h4 fw-bold font-headline mb-2">E-commerce API Documentation</h3>
+                                <p class="text-on-surface-variant">Secure, real-time inventory and order management with full Postman documentation. <span class="text-primary small">View Details</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Course API -->
+                    <div class="col-md-4">
+                        <div class="project-card group cursor-pointer" 
+                            data-bs-toggle="modal" data-bs-target="#projectModal"
+                            data-title="Course Booking API Documentation" 
+                            data-image="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop"
+                            data-desc="RESTful API for managing course enrollments, featuring user registration authentication, and retrieval of user details. Supports course creation, updates, archiving, activation, and student enrollment. Publicly documented using Postman.">
+                            <div class="position-relative overflow-hidden rounded-5 bg-surface-container-high mb-4 ratio ratio-10x12">
+                                <img alt="Project 3" class="img-fluid object-fit-cover transition-transform" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800&auto=format&fit=crop"/>
+                            </div>
+                            <div class="px-2">
+                                <h3 class="h4 fw-bold font-headline mb-2">Course Booking API</h3>
+                                <p class="text-on-surface-variant">RESTful API for management of course enrollments, featuring user registration and student processing. <span class="text-primary small">View Details</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Course App -->
+                    <div class="col-md-8">
+                        <div class="project-card group cursor-pointer" 
+                            data-bs-toggle="modal" data-bs-target="#projectModal"
+                            data-title="Course Booking App" 
+                            data-image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"
+                            data-desc="A MERN-stack course enrollment system featuring user registration, authentication and profile management. Authenticated users can create, update, archive and activate courses. The platform also allows users to browse available courses and enroll seamlessly.">
+                            <div class="position-relative overflow-hidden rounded-5 bg-surface-container-high mb-4 ratio ratio-16x10">
+                                <img alt="Project 4" class="img-fluid object-fit-cover transition-transform" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop"/>
+                                <div class="project-overlay d-flex flex-column justify-content-end p-5">
+                                    <span class="text-primary small text-uppercase fw-bold">Capstone Project</span>
+                                    <h4 class="h3 fw-bold font-headline text-white">Course Booking App</h4>
+                                </div>
+                            </div>
+                            <div class="px-2">
+                                <h3 class="h4 fw-bold font-headline mb-2">Course Booking App</h3>
+                                <p class="text-on-surface-variant">A MERN-stack system for seamless course browsing and secure enrollment with profile management. <span class="text-primary small">View Details</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Airline Prototype -->
+                    <div class="col-md-8">
+                        <div class="project-card group cursor-pointer" 
+                            data-bs-toggle="modal" data-bs-target="#projectModal"
+                            data-title="Airline Booking System Prototype" 
+                            data-image="./img/airline-booking.png"
+                            data-desc="Side Project: Interactive prototype simulating end-to-end airline booking functionalities, including flight search reservation, payment, processing and real-time ticket management.">
+                            <div class="position-relative overflow-hidden rounded-5 bg-surface-container-high mb-4 ratio ratio-16x10">
+                                <img alt="Project 5" class="img-fluid object-fit-cover transition-transform" src="./img/airline-booking.png"/>
+                                <div class="project-overlay d-flex flex-column justify-content-end p-5">
+                                    <span class="text-primary small text-uppercase fw-bold">Interactive Prototype</span>
+                                    <h4 class="h3 fw-bold font-headline text-white">Airline Booking System</h4>
+                                </div>
+                            </div>
+                            <div class="px-2">
+                                <h3 class="h3 fw-bold font-headline mb-2">Airline Booking System Prototype</h3>
+                                <p class="text-on-surface-variant">EInteractive prototype simulating end-to-end airline booking functionality including flight search, 
+                                    reservation, payment processing, and real-time ticket management. <span class="text-primary small">View Details</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Airline Mockup -->
+                    <div class="col-md-4 mt-md-5 pt-md-5">
+                        <div class="project-card group cursor-pointer" 
+                            data-bs-toggle="modal" data-bs-target="#projectModal"
+                            data-title="Airline Booking System Mockup" 
+                            data-image="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=800&auto=format&fit=crop"
+                            data-desc="Side Project: Conceptual design showcasing an intuitive UI for flight search, seat selection and booking confirmation, focusing on user experience and workflow efficiency.">
+                            <div class="position-relative overflow-hidden rounded-5 bg-surface-container-high mb-4 ratio ratio-10x12">
+                                <img alt="Project 6" class="img-fluid object-fit-cover transition-transform" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?q=80&w=800&auto=format&fit=crop"/>
+                            </div>
+                            <div class="px-2">
+                                <h3 class="h4 fw-bold font-headline mb-2">Airline Booking Mockup</h3>
+                                <p class="text-on-surface-variant">Conceptual design showcasing an intuitive UI for flight search, seat selection, and booking confirmation. <span class="text-primary small">View Details</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Short Courses -->
+                    <div class="col-md-4 mt-md-5 pt-md-5">
+                        <div class="project-card group cursor-pointer" 
+                            data-bs-toggle="modal" data-bs-target="#projectModal"
+                            data-title="Multifunctional Student Organizational System" 
+                            data-image="./img/attendance_dashboard.png"
+                            data-desc="A Multi-functional Student Organizational System, developed with Laravel and MySQL, streamlines student organization tasks and enhances communication. It features an automated attendance system using barcode or RFID scanners for faster and more efficient tracking. An integrated eCommerce platform allows student leaders to sell and manage campus merchandise with order tracking. And a CRUD-based online bulletin board keeps students updated with the latest announcements and events.">
+                            <div class="position-relative overflow-hidden rounded-5 bg-surface-container-high mb-4 ratio ratio-10x12">
+                                <img alt="Project 6" class="img-fluid object-fit-cover transition-transform" src="./img/attendance_dashboard.png"/>
+                            </div>
+                            <div class="px-2">
+                                <h3 class="h4 fw-bold font-headline mb-2">Multifunctional Student Organizational System (MSOS)</h3>
+                                <p class="text-on-surface-variant">A 3-in-1 web application that aids student leaders perform tasks efficiently. <span class="text-primary small">View Details</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-md-5 pt-md-5">
+                        <div class="project-card group cursor-pointer" 
+                            data-bs-toggle="modal" data-bs-target="#projectModal"
+                            data-title="Maricakes POS" 
+                            data-image="./img/pos.png"
+                            data-desc="This web-based Point of Sale (POS) application is designed to streamline sales and inventory management for businesses. It provides a user-friendly interface to display available products and enables the generation of purchase receipts for each transaction. The system keeps a record of recently sold items, giving users quick access to sales history, while also tracking monthly revenue to help monitor business performance. In addition to sales tracking, the application serves as a full inventory management tool, allowing administrators to easily add, update, or remove products from the catalog, ensuring that stock levels and product listings remain accurate and up-to-date.">
+                            <div class="position-relative overflow-hidden rounded-5 bg-surface-container-high mb-4 ratio ratio-10x12">
+                                <img alt="Project 6" class="img-fluid object-fit-cover transition-transform" src="./img/pos.png"/>
+                            </div>
+                            <div class="px-2">
+                                <h3 class="h4 fw-bold font-headline mb-2">Point of Sale System</h3>
+                                <p class="text-on-surface-variant">A simple Point of Sale System that monitors sales and inventory of a small business. <span class="text-primary small">View Details</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mt-md-5 pt-md-5">
+                        <div class="project-card group cursor-pointer" 
+                            data-bs-toggle="modal" data-bs-target="#projectModal"
+                            data-title="Budget Tracking System" 
+                            data-image="./img/pennywise-login.png"
+                            data-desc="Pennywise is a web application that helps users manage their finances by automatically allocating income into multiple savings categories and tracking expenses in real-time. Key features include one-click income allocation, category management, list for expense and savings, report generation, and data export.">
+                            <div class="position-relative overflow-hidden rounded-5 bg-surface-container-high mb-4 ratio ratio-10x12">
+                                <img alt="Project 6" class="img-fluid object-fit-cover transition-transform" src="./img/pennywise-login.png"/>
+                            </div>
+                            <div class="px-2">
+                                <h3 class="h4 fw-bold font-headline mb-2">Pennywise Budget Tracking System</h3>
+                                <p class="text-on-surface-variant">Pennywise is a web application that helps users manage their finances by automatically allocating income into multiple savings categories and tracking expenses in real-time. <span class="text-primary small">View Details</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECT MODAL (Dynamic & Compact) -->
+        <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+                <div class="modal-content liquid-glass ghost-border rounded-5 overflow-hidden">
+                    <div class="modal-header border-0 px-4 py-4">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4 pt-0">
+                        <div class="rounded-4 overflow-hidden mb-4 shadow-lg border border-secondary border-opacity-10">
+                            <img id="modalImg" src="" alt="Project Preview" class="img-fluid w-100 object-fit-cover">
+                        </div>
+                        <h2 id="modalTitle" class="font-headline h3 fw-bold text-primary mb-3"></h2>
+                        <p id="modalDesc" class="text-on-surface-variant fs-6 lh-lg"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-section px-3 tonal-transition">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <span class="text-primary font-label small tracking-widest text-uppercase d-block mb-3">Collaboration</span>
+                    <h2 class="font-headline display-5 fw-bold mb-4">Let's craft something remarkable.</h2>
+                </div>
+                <div class="liquid-glass ghost-border p-4 p-md-5 rounded-5">
+                    <form class="row g-4">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="small text-uppercase tracking-wider text-on-surface-variant ms-3 mb-2 d-block" >Full Name</label>
+                                <input class="form-control form-control-custom rounded-4 px-4 py-3" placeholder="John Doe" type="text"/>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="small text-uppercase tracking-wider text-on-surface-variant ms-3 mb-2 d-block">Email Address</label>
+                                <input class="form-control form-control-custom rounded-4 px-4 py-3" placeholder="john@domain.com" type="email"/>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label class="small text-uppercase tracking-wider text-on-surface-variant ms-3 mb-2 d-block">Your Inquiry</label>
+                                <textarea class="form-control form-control-custom rounded-4 px-4 py-3" placeholder="Tell me about your project..." rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center pt-3">
+                            <button class="btn btn-primary-custom px-5 py-3 rounded-pill fw-bold fs-5 shadow-lg" type="submit">
+                                Send Inquiry
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 py-5 mt-5 border-top border-secondary border-opacity-10">
+        <div class="container-xl px-4">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-4 mb-md-0">
+                    <p class="small text-uppercase tracking-wide text-secondary mb-1">
+                        © <span id="year"></span> Nathaniel Rosell.
+                    </p>
+                    <span class="text-primary small text-decoration-none">tanyelrosell@gmail.com</span>
+                </div>
+
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <div class="d-flex justify-content-center gap-4">
+                        <a class="small text-uppercase text-secondary text-decoration-none hover-primary" href="#landing">Portfolio</a>
+                        <a class="small text-uppercase text-secondary text-decoration-none hover-primary" href="#tools">Tools</a>
+                        <a class="small text-uppercase text-secondary text-decoration-none hover-primary" href="#projects">Portfolio</a>
+                        <a class="small text-uppercase text-secondary text-decoration-none hover-primary" href="#contact">Contact</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center text-md-end">
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/rosell.ph" target="_blank" class="social-icon">
+                            <svg class="social-svg" viewBox="0 0 24 24" width="20"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+                        </a>
+                        <!-- GitHub -->
+                        <a href="https://github.com/marupoix" target="_blank" class="social-icon">
+                            <svg class="social-svg" viewBox="0 0 24 24" width="20"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/tanyelrosell/" target="_blank" class="social-icon">
+                            <svg class="social-svg" viewBox="0 0 24 24" width="20"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="btn-back-to-top" class="btn-scroll-top liquid-glass ghost-border rounded-circle">
+        <span class="material-symbols-outlined">expand_less</span>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Your existing Parallax Script -->
+    <script src="config.js"></script>
+</body>
+</html>
